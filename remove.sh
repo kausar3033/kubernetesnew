@@ -1,11 +1,3 @@
-# Welcoem to iBOS Ltd.
-
-#!/bin/sh
-
-# Author : Kausar (iBOS)
-# Script follows here:
-## Remove Docker,kubeadm,kubelet,kubectl
-
 
 sudo systemctl stop kubelet
 sudo systemctl stop docker.socket
@@ -21,4 +13,3 @@ sudo apt autoremove -y
 sudo apt autoclean
 
 
-#Do you want to continue? [Y/n] y
