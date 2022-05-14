@@ -14,8 +14,7 @@
     sh setup-worker-k8s.sh
     
     
-    
-    
+   
     
   ======================= After Ready both machin =================================
   
