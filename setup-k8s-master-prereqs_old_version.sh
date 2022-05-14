@@ -2,8 +2,6 @@
 
 apt-get install -y curl openssh-server
 
-# Setup the kubernetes preprequisites
-#
 echo $(hostname -i) $(hostname) >> /etc/hosts
 sudo sed -i "/swap/s/^/#/" /etc/fstab
 sudo swapoff -a
@@ -32,9 +30,6 @@ systemctl restart docker
 apt-get install -y apt-transport-https
 apt-get install -y kubelet=$KUBE_DPKG_VERSION kubeadm=$KUBE_DPKG_VERSION kubectl=$KUBE_DPKG_VERSION
 apt-mark hold docker.io kubelet kubeadm kubectl
-
-# curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
-# curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
 sudo systemctl enable docker
 sudo systemctl enable kubelet
