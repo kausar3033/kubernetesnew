@@ -30,15 +30,15 @@
     
  ## After getting join key now times to join worker node ,past join key in worker node and execute
  
- ###   #Example:kubeadm join 10.209.99.225:6443 --token 0g27s8.x1ygoh40szhkpkfq --discovery-token-ca-cert-hash 
- ###   #sha256:7221e7dcfc1e7bbfdf9dcb83c6f43e4aa51ce558f07831948ea039b23d181329
+ ###   #Example:kubeadm join 10.209.99.225:6443 --token 0g27s8.x1ygoh40szhkpkfq --discovery-token-ca-cert-hash sha256:7221e7dcfc1e7bbfdf9dcb83c6f43e4aa51ce558f07831948ea039b23d181329
 
 
 
-###  #kubeadm join 10.209.99.225:6443 --token ukzmux.wn3k3ykh5ldo9557 \
-     
- ###   #--discovery-token-ca-cert-hash sha256:7221e7dcfc1e7bbfdf9dcb83c6f43e4aa51ce558f07831948ea039b23d181329
+####  #kubeadm join 10.209.99.225:6443 --token ukzmux.wn3k3ykh5ldo9557 \--discovery-token-ca-cert-hash sha256:7221e7dcfc1e7bbfdf9dcb83c6f43e4aa51ce558f07831948ea039b23d181329
 
+
+## Check on master node 
+    kubectl get node
  
  
  
