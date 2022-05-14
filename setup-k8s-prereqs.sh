@@ -30,7 +30,9 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install kubelet kubeadm kubectl
+apt-get install kubelet 
+apt-get install kubeadm
+apt-get install kubectl
 
 
 ======== upto worker node and add the token from master =======
