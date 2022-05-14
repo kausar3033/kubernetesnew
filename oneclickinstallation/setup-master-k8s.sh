@@ -1,6 +1,7 @@
-#!/bin/sh -x
 
+#!/bin/sh -x
 apt-get install -y curl openssh-server
+
 echo $(hostname -i) $(hostname) >> /etc/hosts
 sudo sed -i "/swap/s/^/#/" /etc/fstab
 sudo swapoff -a
@@ -24,7 +25,7 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install kubelet 
+apt-get install kubelet
 apt-get install kubeadm
 apt-get install kubectl
 
